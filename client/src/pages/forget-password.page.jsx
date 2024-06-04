@@ -55,7 +55,7 @@ const ForgetPassword = () => {
     <AnimationWrapper>
       <Toaster />
       <div className="h-screen bg-gradient-to-r from-sky-200 to-pink-100 flex flex-col items-center justify-start pt-12">
-        <h1 className="text-4xl font-gelasio capitalize text-center font-semibold mb-12">Forgot Password ..?</h1>
+        <h1 className="text-4xl font-gelasio capitalize text-center font-semibold mb-12 text-slate-800">Forgot Password ..?</h1>
         <div className="bg-white rounded-lg shadow-xl p-6 w-full max-w-md">
           <h1 className="text-2xl font-semibold mb-4">{step === 1 ? 'Enter Email' : 'Reset Password'}</h1>
           <form ref={ChangePasswordForm} onSubmit={step === 1 ? handleSendOtp : handleResetPassword}>

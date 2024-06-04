@@ -10,7 +10,7 @@ const InputBox = ({name, type, id, value, placeholder,icon, disable = false  }) 
                 defaultValue={value}
                 id={id}
                 disabled={disable}
-                className="input-box rounded-xl outline:none focus:outline-none shadow-xl"
+                className="input-box  outline:none focus:outline-none shadow-xl"
             />
             <i className={"fa "+ icon + " input-icon"}></i>
             {

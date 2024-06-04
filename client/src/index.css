@@ -62,13 +62,13 @@
         @apply w-[100%] rounded-md p-4 bg-grey pl-12 border border-grey focus:outline-purple focus:bg-transparent placeholder:text-black;
     } */
     .input-box {
-    @apply w-[100%] rounded-md p-4 bg-transparent border pl-12 focus:outline focus:bg-grey placeholder:text-black;
+    @apply w-[100%] rounded-md p-4 focus:bg-transparent border pl-12 focus:outline bg-grey placeholder:text-black;
     
     --tw-gradient-stops: var(--tw-gradient-stops, var(--tw-gradient-from, rgb(45, 45, 47)) 0%, var(--tw-gradient-to, rgb(50, 51, 51)) 100%);
     border-image: linear-gradient(to left, #FF4E4E, #8B46FF) 1;
 }
 .input-box:hover{
-    border-color: #8B46FF
+    border-color: #241839
 }
 
 
@@ -78,6 +78,7 @@
 
     .input-icon{
         @apply absolute left-4 top-1/2 -translate-y-1/2 focus:outline-purple;
+        color : inherit;
     }
 
     .link{
