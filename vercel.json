@@ -14,16 +14,7 @@
         "use": "@vercel/node"
       }
     ],
-    "routes": [
-      {
-        "src": "/server/.*",
-        "dest": "/server.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/client/index.html"
-      }
-    ],
+    
      "rewrites": [
           { "source": "/(.*)", "destination": "/" }
         ]  
