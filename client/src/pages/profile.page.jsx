@@ -123,7 +123,7 @@ const ProfilePage = () => {
                     <h1 className="text-2xl font-medium">@{profile_username}</h1>
                     <p className="text-xl capitalize h-6">{fullname}</p>
                     <p>
-                    {(total_posts+1).toLocaleString()} Blogs -{" "}
+                    {(total_posts).toLocaleString()} Blogs -{" "}
                     {total_reads.toLocaleString()} Reads
                     </p>
                     <div className="flex gap-4 mt-2">
