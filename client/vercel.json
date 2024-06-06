@@ -1,31 +1,5 @@
 {
-    "version": 2,
-    "name": "dev-talks",
-    "builds": [
-      {
-        "src": "client/package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "client/dist"
-        }
-      },
-      {
-        "src": "server/**/*.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/server/.*",
-        "dest": "/server.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/client/$1"
-      }
-    ],
-     "rewrites": [
-          { "source": "/(.*)", "destination": "/" }
-        ]  
-  }
-  
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
