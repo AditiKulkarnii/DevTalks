@@ -21,7 +21,10 @@ server.use(fileUpload({
     useTempFiles: true
 }))
 let PORT = 3000;
-server.use(cors())
+server.use(cors());
+server.use(cors({
+    origin : 'https://dev-talks-lilac.vercel.app/'
+}));
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccountKey)
 })
