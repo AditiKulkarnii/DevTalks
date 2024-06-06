@@ -13,8 +13,6 @@ import BlogRouter from './routes/blogRoutes.js'
 import userRouter from './routes/userRoutes.js'
 import notificationRouter from './routes/notification.js'
 
-
-
 const server = express();
 server.use(express.json())
 server.use(fileUpload({
@@ -23,7 +21,9 @@ server.use(fileUpload({
 let PORT = 3000;
 server.use(cors());
 server.use(cors({
-    origin : 'https://dev-talks-lilac.vercel.app/'
+    origin: 'https://dev-talks-lilac.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccountKey)
