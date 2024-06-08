@@ -24,7 +24,7 @@ const EditProfile = () => {
     let editProfileForm = useRef()
 
     let {personal_info: {profile_img, fullname, username: profile_username, email, bio}, social_links} = profile;
-    console.log(profile)
+    
     useEffect(() => {
         if(access_token){
             axios.post(import.meta.env.VITE_SERVER_DOMAIN + '/get-profile' , {username: userAuth.username})
@@ -71,7 +71,7 @@ const EditProfile = () => {
                         setUserAuth(newUserAuth)
 
                         setUpdatedProfileImg(null);
-                        toast.dismiss(loadingToast)
+                        toast.dismiss(loadingToast, 2000)
                         toast.success("Uploaded Successfully :)")
                         e.target.removeAttribute("disabled");
                     })

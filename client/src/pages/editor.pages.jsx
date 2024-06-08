@@ -37,7 +37,7 @@ const Editor = () => {
       .catch(err =>{
         setBlog(null)
         setLoading(false)
-        console.log(false)
+       
       })
     }, [])
   return (

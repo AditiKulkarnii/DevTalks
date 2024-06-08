@@ -64,7 +64,7 @@ const Home = () => {
           data_to_send: { tag: pageState }
         })
         setBlogs(formattedData);
-        // console.log(formattedData);
+        
       })
       .catch((err) => {
         console.error(err);
@@ -81,7 +81,6 @@ const Home = () => {
       return;
     }
     setPageState(category);
-    console.log("pagestate",pageState);
   };
 
   useEffect(() => {

@@ -52,7 +52,7 @@ const ProfilePage = () => {
         username: profileId,
       })
       .then(({ data: user }) => {
-        // console.log(user)
+        
         if(user !== null)
             setProfile(user);
 
